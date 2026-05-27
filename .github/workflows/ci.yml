@@ -14,26 +14,22 @@ jobs:
       - name: Set up job
         uses: actions/checkout@v3
 
-      - name: Set up Python 3.12.7
+      - name: Set up Python
         uses: actions/setup-python@v4
         with:
           python-version: "3.12"
-
-      - name: Check Env
-        run: |
-          python --version
-          pip --version
 
       - name: Install dependencies
         run: |
           pip install --upgrade pip
           pip install mlflow pandas numpy scikit-learn joblib
 
+      - name: Check repository structure
+        run: |
+          pwd
+          ls
+          find . -maxdepth 2 -type f
+
       - name: Run MLflow project
         run: |
-          cd Membangun_model
           mlflow run .
-
-      - name: Get latest MLflow run_id
-        run: |
-          echo "MLflow run completed"
