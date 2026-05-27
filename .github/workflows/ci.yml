@@ -31,7 +31,8 @@ jobs:
 
       - name: Run MLflow project
         run: |
-          mlflow run ./Membangun_model
+          cd Membangun_model
+          mlflow run .
 
       - name: Get latest MLflow run_id
         run: |
