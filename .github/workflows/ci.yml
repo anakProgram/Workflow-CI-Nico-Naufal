@@ -1,0 +1,38 @@
+name: MLflow CI Pipeline
+
+on:
+  push:
+    branches:
+      - master
+      - main
+
+jobs:
+  retrain-model:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Set up job
+        uses: actions/checkout@v3
+
+      - name: Set up Python 3.12.7
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.12"
+
+      - name: Check Env
+        run: |
+          python --version
+          pip --version
+
+      - name: Install dependencies
+        run: |
+          pip install --upgrade pip
+          pip install mlflow pandas numpy scikit-learn joblib
+
+      - name: Run MLflow project
+        run: |
+          mlflow run ./Membangun_model
+
+      - name: Get latest MLflow run_id
+        run: |
+          echo "MLflow run completed"
