@@ -26,7 +26,6 @@ jobs:
 
       - name: Check repository structure
         run: |
-          pwd
           ls
           find . -maxdepth 2 -type f
 
