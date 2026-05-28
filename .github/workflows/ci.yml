@@ -43,4 +43,4 @@ jobs:
       # Run modelling script directly
       - name: Run Training Pipeline
         run: |
-          python Membangun_model/modelling.py
+          python Workflow-CI/modelling.py
