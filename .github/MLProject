@@ -4,4 +4,4 @@ python_env: python_env.yaml
 
 entry_points:
   main:
-    command: "python Membangun_model/modelling.py"
+    command: "python Workflow-CI/modelling.py"
