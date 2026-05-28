@@ -1,0 +1,9 @@
+python: "3.11"
+
+dependencies:
+  - mlflow==2.17.2
+  - pandas
+  - numpy
+  - scikit-learn
+  - joblib
+  - cloudpickle
