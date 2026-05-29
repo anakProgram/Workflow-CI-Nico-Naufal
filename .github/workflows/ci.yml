@@ -34,4 +34,6 @@ jobs:
       - name: Run MLflow Project
         working-directory: ./MLProject
         run: |
+          ls -la
+          cat MLproject
           mlflow run .
