@@ -32,7 +32,6 @@ jobs:
             joblib
 
       - name: Run MLflow Project
-        working-directory: ./MLProject
         run: |
           ls -la
           cat MLproject
