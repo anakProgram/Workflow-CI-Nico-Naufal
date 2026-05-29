@@ -18,4 +18,4 @@ model_id: null
 model_size_bytes: 3603556
 model_uuid: 08121638ef3849adab0aae09ac6f1968
 prompts: null
-utc_time_created: '2026-05-28 11:48:22.301726'
+utc_time_created: "2026-05-28 11:48:22.301726"
