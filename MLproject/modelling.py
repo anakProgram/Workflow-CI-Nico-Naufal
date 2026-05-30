@@ -12,6 +12,9 @@ mlflow.set_tracking_uri("http://127.0.0.1:5001")
 # Experiment
 mlflow.set_experiment("Stock_Prediction")
 
+# WAJIB (kriteria Basic)
+mlflow.sklearn.autolog(log_models=True)
+
 # Load dataset
 df = pd.read_csv(
     "MLProject/dataset_preprocessing/hasil_preprocessing.csv"
