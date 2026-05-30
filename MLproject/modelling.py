@@ -14,7 +14,7 @@ mlflow.set_experiment("Stock_Prediction")
 
 # Load dataset
 df = pd.read_csv(
-    "dataset_preprocessing/hasil_preprocessing.csv"
+    "MLProject/dataset_preprocessing/hasil_preprocessing.csv"
 )
 
 # Features & target
