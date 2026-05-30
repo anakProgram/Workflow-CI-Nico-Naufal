@@ -37,5 +37,6 @@ jobs:
 
       - name: Run MLflow Project
         run: |
-          cd Workflow-CI/MLProject
+          cd MLproject
+          cat MLproject
           mlflow run . --env-manager local
