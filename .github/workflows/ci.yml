@@ -35,8 +35,12 @@ jobs:
           pwd
           ls -R
 
-      - name: Run MLflow Project
+      #- name: Run MLflow Project
+      # run: |
+      #  cd Workflow-CI/MLProject
+      # cat MLproject
+      #mlflow run . --env-manager local
+
+      - name: Debug Repository Structure
         run: |
-          cd Workflow-CI/MLProject
-          cat MLproject
-          mlflow run . --env-manager local
+          find . | sort
