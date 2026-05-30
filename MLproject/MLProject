@@ -1,7 +1,7 @@
-name: StockPredictionProject
+name: Stock_Prediction_Project
 
 conda_env: conda.yaml
 
 entry_points:
   main:
-    command: "python modelling.py"
+    command: "python Workflow-CI/MLProject/modelling.py"
