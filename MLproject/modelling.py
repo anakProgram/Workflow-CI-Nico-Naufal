@@ -11,7 +11,7 @@ mlflow.set_experiment("Stock_Prediction")
 mlflow.sklearn.autolog(log_models=True)
 
 df = pd.read_csv(
-    "Workflow-CI/dataset_preprocessing/hasil_preprocessing.csv"
+    "dataset_preprocessing/hasil_preprocessing.csv"
 )
 
 X = pd.get_dummies(
